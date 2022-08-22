@@ -6,9 +6,9 @@ function getInputValueById(inputId){
   return inputAmount;
 }
 
-   /* Select Player List and Error Handling Function .......................... */
+   /* Select Player List and Error Handling Function ........................ */
  function selectBestPlayerInId(playerName, playerId){
-  /* Select Player List by Use Event Delegate................................ */
+  /* Select Player List by Using Event Delegate............................. */
     const itemContainer = document.getElementById("player-container");
     const list = document.createElement("li");
     list.innerText = playerName;
@@ -25,7 +25,6 @@ function getInputValueById(inputId){
     }
   }
   
-
   /* Get and Set Player Expenses............................................ */
 document.getElementById("calculate").addEventListener('click', function(){
     const perPlayerAmount = getInputValueById('per-player-amount');
@@ -56,7 +55,7 @@ document.getElementById("calculate-total").addEventListener('click', function(){
     totalField.innerText = total;
 });
 
-  /* Get Element by Id and  Select Player List and Error Handling........ */
+  /* Get Element by Id, Select Player List and Error Handling........ */
   document.getElementById("messi-added").addEventListener("click", function () {
     selectBestPlayerInId("Lionel Messi", 'messi-added');
   });
